@@ -71,4 +71,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any inquiries, contact [your email] or visit [your website].
+For any inquiries, contact vietpham06262@gmail.com or 0967937653.
