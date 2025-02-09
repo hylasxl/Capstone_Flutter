@@ -1,0 +1,753 @@
+{
+    "@@locale": "zh",
+    "@wcbackfs": {
+        "description": "Greeting message for returning users",
+        "type": "text"
+    },
+    "wcbackfs": "欢迎回来，",
+    "@wcbackss": {
+        "description": "Message indicating the user is missed",
+        "type": "text"
+    },
+    "wcbackss": "我们太想你!",
+    "@username": {
+        "description": "Label for the username field",
+        "type": "text"
+    },
+    "username": "用户名",
+    "@password": {
+        "description": "Label for the password field",
+        "type": "text"
+    },
+    "password": "密码",
+    "@login": {
+        "description": "Label for the login button",
+        "type": "text"
+    },
+    "login": "登录",
+    "@fpass": {
+        "description": "Text for forget password link",
+        "type": "text"
+    },
+    "fpass": "忘记密码？",
+    "@newto": {
+        "description": "Message for new users to sign up",
+        "type": "text"
+    },
+    "newto": "没有SyncIO帐户，登记",
+    "@lwgg": {
+        "description": "Login with Google text",
+        "type": "text"
+    },
+    "lwgg": "通过 Google 继续",
+    "@nxt": {
+        "description": "Next",
+        "type": "text"
+    },
+    "nxt": "继续",
+    "@wyn": {
+        "description": "What's your name?",
+        "type": "text"
+    },
+    "wyn": "你的贵姓是什么?",
+    "@wynd": {
+        "description": "Enter the name you use in real life.",
+        "type": "text"
+    },
+    "wynd": "在生活中使用你真的贵姓",
+    "@ln": {
+        "description": "Last name",
+        "type": "text"
+    },
+    "ln": "名",
+    "@fn": {
+        "description": "First name",
+        "type": "text"
+    },
+    "fn": "姓",
+    "@iaha": {
+        "description": "I already have an account",
+        "type": "text"
+    },
+    "iaha": "已经有账户",
+    "@or": {
+        "description": "Or",
+        "type": "text"
+    },
+    "or": "或者",
+    "@wybd": {
+        "description": "What's your birthday?",
+        "type": "text"
+    },
+    "wybd": "你的生日?",
+    "@wybdd": {
+        "description": "Choose the date of birth. You can always make this private later.",
+        "type": "text"
+    },
+    "wybdd": "选择你的生日. 您稍后可以随时将其设为私有.",
+    "@bd": {
+        "description": "Birthday",
+        "type": "text"
+    },
+    "bd": "生日",
+    "@selectDate": {
+        "description": "Select Date",
+        "type": "text"
+    },
+    "selectDate": "选择日天",
+    "@gd": {
+        "description": "Gender",
+        "type": "text"
+    },
+    "gd": "性别",
+    "@gdd": {
+        "description": "You can change who sees your gender on your profile later.",
+        "type": "text"
+    },
+    "gdd": "您可以稍后更改谁在您的个人资料中看到您的性别.",
+    "@male": {
+        "description": "Male",
+        "type": "text"
+    },
+    "male": "男",
+    "@female": {
+        "description": "Female",
+        "type": "text"
+    },
+    "female": "女",
+    "@other": {
+        "description": "Other",
+        "type": "text"
+    },
+    "other": "其他",
+    "@em": {
+        "description": "Email",
+        "type": "text"
+    },
+    "em": "邮件",
+    "@emd": {
+        "description": "Enter the email where you can be contacted. No one will see this on your profile.",
+        "type": "text"
+    },
+    "emd": "输入可以联系您的电子邮件。没有人会在您的个人资料上看到这一点.",
+    "@pee": {
+        "description": "Please enter email",
+        "type": "text"
+    },
+    "pee": "请输入邮件",
+    "@pefn": {
+        "description": "Please enter first name",
+        "type": "text"
+    },
+    "pefn": "请输入您的名",
+    "@peln": {
+        "description": "Please enter last name",
+        "type": "text"
+    },
+    "peln": "请输入您的贵姓",
+    "@pcgd": {
+        "description": "Please choose gender",
+        "type": "text"
+    },
+    "pcgd": "请选择性别",
+    "@pepw": {
+        "description": "Please enter password",
+        "type": "text"
+    },
+    "pepw": "请输入密码",
+    "@pwnv": {
+        "description": "Password is must be at least 8 letter l",
+        "type": "text"
+    },
+    "pwnv": "密码长度必须至少为 8 个字母，并且至少为数字和特殊字符",
+    "@eaiu": {
+        "description": "邮件已被使用",
+        "type": "text"
+    },
+    "eaiu": "邮件已被使用",
+    "@eicf": {
+        "description": "Email format is not correct",
+        "type": "text"
+    },
+    "eicf": "邮件格式不正确",
+    "@pw": {
+        "description": "Password",
+        "type": "text"
+    },
+    "pw": "密码",
+    "@pwd": {
+        "description": "Password description",
+        "type": "text"
+    },
+    "pwd": "创建一个至少包含八个字母、一个数字和一个特殊字符的密码。这应该是别人猜不到的",
+    "@urnd": {
+        "description": "Username description",
+        "type": "text"
+    },
+    "urnd": "用户名存储在我们的系统中以区分用户.",
+    "@peusn": {
+        "description": "Please enter username",
+        "type": "text"
+    },
+    "peusn": "请输入用户名",
+    "@peusnapw": {
+        "description": "Please enter username and password",
+        "type": "text"
+    },
+    "peusnapw": "请输入用户名和密码",
+    "@lge00": {
+        "description": "Login failed",
+        "type": "text"
+    },
+    "lge00": "登入失败",
+    "@lge01": {
+        "description": "用户名不能为空",
+        "type": "text"
+    },
+    "lge01": "用户名不能为空",
+    "@lge02": {
+        "description": "密码不能为空",
+        "type": "text"
+    },
+    "lge02": "密码不能为空",
+    "@lge03": {
+        "description": "用户名不正确",
+        "type": "text"
+    },
+    "lge03": "用户名不正确",
+    "@lge04": {
+        "description": "账户已被删除",
+        "type": "text"
+    },
+    "lge04": "账户已被删除",
+    "@lge05": {
+        "description": "账户被管理员限制",
+        "type": "text"
+    },
+    "lge05": "账户被管理员限制",
+    "@lge06": {
+        "description": "账户被管理员禁止",
+        "type": "text"
+    },
+    "lge06": "账户被管理员禁止",
+    "@lge07": {
+        "description": "密码不正确",
+        "type": "text"
+    },
+    "lge07": "密码不正确",
+    "@re01": {
+        "description": "缺少必填字段",
+        "type": "text"
+    },
+    "re01": "缺少必填字段",
+    "@mysqldbe01": {
+        "description": "开始事务时出错",
+        "type": "text"
+    },
+    "mysqldbe01": "开始事务时出错",
+    "@re02": {
+        "description": "用户名已存在",
+        "type": "text"
+    },
+    "re02": "用户名已存在",
+    "@re03": {
+        "description": "电子邮件已存在",
+        "type": "text"
+    },
+    "re03": "电子邮件已存在",
+    "@se01": {
+        "description": "密码哈希错误",
+        "type": "text"
+    },
+    "se01": "密码哈希错误",
+    "@re04": {
+        "description": "创建账户时出错",
+        "type": "text"
+    },
+    "re04": "创建账户时出错",
+    "@re05": {
+        "description": "创建账户头像时出错",
+        "type": "text"
+    },
+    "re05": "创建账户头像时出错",
+    "@re06": {
+        "description": "创建账户信息时出错",
+        "type": "text"
+    },
+    "re06": "创建账户信息时出错",
+    "@mysqldbe02": {
+        "description": "提交事务时出错",
+        "type": "text"
+    },
+    "mysqldbe02": "提交事务时出错",
+    "@pebd": {
+        "description": "Please enter birthday",
+        "type": "text"
+    },
+    "pebd": "请输入你的生日",
+    "formatDate": "{year}年{month}月{day}日",
+    "@formatDate": {
+        "description": "Format date",
+        "type": "text",
+        "placeholders": {
+            "day": {
+                "type": "String",
+                "description": "Day of the month"
+            },
+            "month": {
+                "type": "String",
+                "description": "Month name"
+            },
+            "year": {
+                "type": "String",
+                "description": "Full year"
+            }
+        }
+    },
+    "@uma16yo": {
+        "description": "user must be more than 16 years old",
+        "type": "text"
+    },
+    "uma16yo": "用户必要年满16岁",
+    "@usnaiu": {
+        "description": "username is already in use",
+        "type": "text"
+    },
+    "usnaiu": "用户名已被使用",
+    "@avt": {
+        "description": "Avatar",
+        "type": "text"
+    },
+    "avt": "头像",
+    "@avtd": {
+        "description": "Avatar description",
+        "type": "text"
+    },
+    "avtd": "代表用户身份的个人资料图片。它可以是照片或插图，通常用于跨平台的个性化",
+    "@simg": {
+        "description": "Select image",
+        "type": "text"
+    },
+    "simg": "选择图像",
+    "@nimgs": {
+        "description": "No image selected",
+        "type": "text"
+    },
+    "nimgs": "未选择图像",
+    "@re": {
+        "description": "Register failed",
+        "type": "text"
+    },
+    "re": "登记失败",
+    "@aue": {
+        "description": "Error when uploading image",
+        "type": "text"
+    },
+    "aue": "上传图片时出错",
+    "@rs": {
+        "description": "Register successfully",
+        "type": "text"
+    },
+    "rs": "登记成功",
+    "@snt": {
+        "description": "Share new thoughts",
+        "type": "text"
+    },
+    "snt": "分享新鲜事",
+    "@syt": {
+        "description": "Share new thoughts",
+        "type": "text"
+    },
+    "syt": "分享你的想法",
+    "@fr": {
+        "description": "Friend Request",
+        "type": "text"
+    },
+    "fr": "加好友请求",
+    "newFeeds": "新动态",
+    "@newFeeds": {
+        "description": "New Feeds",
+        "type": "text"
+    },
+    "friend": "朋友",
+    "@friend": {
+        "description": "Friend",
+        "type": "text"
+    },
+    "messages": "消息",
+    "@messages": {
+        "description": "Messages",
+        "type": "text"
+    },
+    "notifications": "通知",
+    "@notifications": {
+        "description": "Notifications",
+        "type": "text"
+    },
+    "general": "设置",
+    "@general": {
+        "description": "General",
+        "type": "text"
+    },
+    "@yfr": {
+        "description": "Your friends",
+        "type": "text"
+    },
+    "yfr": "你的好友",
+    "@sa": {
+        "description": "Show all",
+        "type": "text"
+    },
+    "sa": "全部",
+    "justNow": "刚刚",
+    "minuteAgo": "{count, plural, one{1 分钟} other{{count} 分钟}}",
+    "hourAgo": "{count, plural, one{1 小时} other{{count} 小时}}",
+    "dayAgo": "{count, plural, one{1 天} other{{count} 天}}",
+    "weekAgo": "{count, plural, one{1 周} other{{count} 周}}",
+    "monthAgo": "{count, plural, one{1 月} other{{count} 月}}",
+    "yearAgo": "{count, plural, one{1 年} other{{count} 年}}",
+    "@accept": {
+        "description": "Accept",
+        "type": "text"
+    },
+    "accept": "确认",
+    "@reject": {
+        "description": "Reject",
+        "type": "text"
+    },
+    "reject": "删除",
+    "@accepted": {
+        "description": "Accepted",
+        "type": "text"
+    },
+    "accepted": "已接受",
+    "@rejected": {
+        "description": "Rejected",
+        "type": "text"
+    },
+    "rejected": "已拒绝",
+    "mutualFriends": "共同好友",
+    "@mutualFriends": {
+        "description": "Mutual Friends",
+        "type": "text"
+    },
+    "public": "公开",
+    "@public": {
+        "description": "Public",
+        "type": "text"
+    },
+    "friendOnly": "仅好友",
+    "@friendOnly": {
+        "description": "Friend only",
+        "type": "text"
+    },
+    "private": "私密",
+    "@private": {
+        "description": "Private",
+        "type": "text"
+    },
+    "publishLate": "稍后发布",
+    "@publishLate": {
+        "description": "Publish late",
+        "type": "text"
+    },
+    "@post_verb": {
+        "description": "Post",
+        "type": "text"
+    },
+    "post_verb": "下一步",
+    "@whocanseepost": {
+        "description": "Who can see your post",
+        "type": "text"
+    },
+    "whocanseepost": "谁可以看到你的帖子?",
+    "postAppearance": "您的帖子可能会出现在动态、您的个人资料和搜索结果中。",
+    "@postAppearance": {
+        "description": "Indicates where the user's post may appear",
+        "type": "text"
+    },
+    "@anyoneOnOrOff": {
+        "description": "Anyone on or off SyncIO",
+        "type": "text"
+    },
+    "anyoneOnOrOff": "SyncIO内外的任何人",
+    "@yourFriendsOnSyncIO": {
+        "description": "Your friends on SyncIO",
+        "type": "text"
+    },
+    "yourFriendsOnSyncIO": "您在SyncIO上的朋友",
+    "@onlyMe": {
+        "description": "Only me",
+        "type": "text"
+    },
+    "onlyMe": "仅自己",
+    "@cancel": {
+        "description": "Cancel",
+        "type": "text"
+    },
+    "cancel": "取消",
+    "photos": "照片",
+    "@photos": {
+        "description": "Photos",
+        "type": "text"
+    },
+    "tagFriends": "标记朋友",
+    "@tagFriends": {
+        "description": "Tag friends",
+        "type": "text"
+    },
+    "@selected": {
+        "description": "Selected",
+        "type": "text"
+    },
+    "selected": "已选择",
+    "@yourFriends": {
+        "description": "Your friends",
+        "type": "text"
+    },
+    "yourFriends": "推荐好友",
+    "tagaperson": "与 {personName}",
+    "@tagaperson": {
+        "description": "with {personName}",
+        "type": "text",
+        "placeholders": {
+            "personName": {
+                "type": "String",
+                "description": "Name of the person"
+            }
+        }
+    },
+    "tag2person": "与 {person1name}, {person2name}",
+    "@tag2person": {
+        "description": "with {person1name}, {person2name}",
+        "type": "text",
+        "placeholders": {
+            "person1name": {
+                "type": "String",
+                "description": "Name of the first person"
+            },
+            "person2name": {
+                "type": "String",
+                "description": "Name of the second person"
+            }
+        }
+    },
+    "tagmultiple": "与 {person1name} 和其他 {count} 用户",
+    "@tagmultiple": {
+        "description": "with {person1name} and {count} other user",
+        "type": "text",
+        "placeholders": {
+            "person1name": {
+                "type": "String",
+                "description": "Name of the first person"
+            },
+            "count": {
+                "type": "String",
+                "description": "Number of other users"
+            }
+        }
+    },
+    "noRequest": "没有请求",
+    "postCreatedSuccessfully": "帖子创建成功",
+    "@noRequest": {
+        "description": "No request",
+        "type": "text"
+    },
+    "@postCreatedSuccessfully": {
+        "description": "Post created successfully",
+        "type": "text"
+    },
+    "@theme": {
+        "description": "Theme",
+        "type": "text"
+    },
+    "theme": "主题",
+    "@language": {
+        "description": "Language",
+        "type": "text"
+    },
+    "language": "语言",
+    "@english": {
+        "description": "English",
+        "type": "text"
+    },
+    "english": "英语",
+    "@vietnamese": {
+        "description": "Vietnamese",
+        "type": "text"
+    },
+    "vietnamese": "越南语",
+    "@mandarinChinese": {
+        "description": "Mandarin Chinese",
+        "type": "text"
+    },
+    "mandarinChinese": "中文（简体)",
+    "@languageScreenDescription": {
+        "description": "Choose your preferred language to personalize your experience. Your selection will instantly update the app, helping you connect and engage with friends and communities in the language you’re most comfortable with.",
+        "type": "text"
+    },
+    "languageScreenDescription": "选择您喜欢的语言来个性化您的体验。您的选择将立即更新应用程序，帮助您以最舒适的语言与朋友和社区联系和互动。",
+    "themeScreenDescription": "选择您喜欢的主题来自定义应用程序的外观和感觉。无论您喜欢浅色模式还是深色模式，您的选择都会立即更新，创建一个适合您风格的浏览体验。",
+    "lightMode": "浅色模式",
+    "darkMode": "深色模式",
+    "@signOut": {
+        "description": "Sign out",
+        "type": "text"
+    },
+    "signOut": "登出",
+    "comment": "{count, plural, one{1 评论} other{{count} 评论}}",
+    "share": "{count, plural, one{1 分享} other{{count} 分享}}",
+    "reply": "回复",
+    "typeAComment": "输入评论",
+    "noComment": "没有评论",
+    "showReplies": "显示回复",
+    "hideReplies": "隐藏回复",
+    "@sharePost": {
+        "description": "Share post",
+        "type": "text"
+    },
+    "sharePost": "分享帖子",
+    "@sharePostSuccessfully": {
+        "description": "Share post successfully",
+        "type": "text"
+    },
+    "sharePostSuccessfully": "帖子分享成功",
+    "friendsCount": "{count, plural, =0{没有好友} one{1 好友} other{{count} 好友}}",
+    "@friendsCount": {
+        "description": "Number of friends",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "String",
+                "description": "Number of friends"
+            }
+        }
+    },
+    "@addFriend": {
+        "description": "Add friend",
+        "type": "text"
+    },
+    "addFriend": "加好友",
+    "@requestSent": {
+        "description": "Request sent",
+        "type": "text"
+    },
+    "requestSent": "请求已发送",
+    "@recallRequest": {
+        "description": "Recall request",
+        "type": "text"
+    },
+    "recallRequest": "撤回请求",
+    "@seeInformation": {
+        "description": "See information",
+        "type": "text"
+    },
+    "seeInformation": "查看信息",
+    "@nothingToShow": {
+        "description": "Nothing to show",
+        "type": "text"
+    },
+    "nothingToShow": "没有可显示的内容",
+    "@online": {
+        "description": "Online",
+        "type": "text"
+    },
+    "online": "在线",
+    "@offline": {
+        "description": "Offline",
+        "type": "text"
+    },
+    "offline": "离线",
+    "@sentRequest": {
+        "description": "Sent request",
+        "type": "text"
+    },
+    "sentRequest": "请求已发送",
+    "@cancelRequest": {
+        "description": "Cancel request",
+        "type": "text"
+    },
+    "cancelRequest": "取消请求",
+    "@displayName": {
+        "description": "Display name",
+        "type": "text"
+    },
+    "displayName": "显示名称",
+    "phoneNumber": "电话号码",
+    "materialStatus": "婚姻状况",
+    "single": "单身",
+    "in_a_relationship": "恋爱中",
+    "engaged": "订婚",
+    "married": "已婚",
+    "in_a_civil_union": "民事结合",
+    "in_a_domestic_partnership": "家庭伴侣",
+    "in_an_open_relationship": "开放关系",
+    "its_complicated": "复杂",
+    "separated": "分居",
+    "divorced": "离婚",
+    "widowed": "丧偶",
+    "@save": {
+        "description": "Save",
+        "type": "text"
+    },
+    "save": "保存",
+    "@displayType": {
+        "description": "Display type",
+        "type": "text"
+    },
+    "displayType": "显示类型",
+    "emailRegistered": "此电子邮件已注册为凭证方法",
+    "forgetPassword": "忘记密码",
+    "verifyAccount": "请输入您的电子邮件和密码以验证您的帐户",
+    "incorrectEmailOrUsername": "电子邮件或用户名不正确，请重新输入",
+    "otpSent": "我们已将 OTP 发送到您的电子邮件，请检查您的电子邮件并在下面输入 OTP。OTP 是一个六位数的模式",
+    "@otpSent": {
+        "description": "Message indicating that an OTP has been sent to the user's email",
+        "type": "text"
+    },
+    "otpAttempts": "{count, plural, one{您已输入 OTP 1 次，还剩 {remaining} 次机会} other{您已输入 OTP {count} 次，还剩 {remaining} 次机会}}",
+    "@otpAttempts": {
+        "description": "Message indicating the number of OTP attempts and the remaining attempts",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "String",
+                "description": "Number of OTP attempts"
+            },
+            "remaining": {
+                "type": "String",
+                "description": "Number of remaining attempts"
+            }
+        }
+    },
+    "@resendOtp": {
+        "description": "Resend OTP",
+        "type": "text"
+    },
+    "resendOtp": "重新发送 OTP",
+    "@sendEmailFailed": {
+        "description": "Send email failed",
+        "type": "text"
+    },
+    "sendEmailFailed": "发送邮件失败",
+    "@sendEmailSuccessfully": {
+        "description": "Send email successfully",
+        "type": "text"
+    },
+    "sendEmailSuccessfully": "发送邮件成功",
+    "@resetPassword": {
+        "description": "Reset password",
+        "type": "text"
+    },
+    "resetPassword": "重置密码",
+    "@newPassword": {
+        "description": "New password",
+        "type": "text"
+    },
+    "newPassword": "新密码",
+    "@confirmPassword": {
+        "description": "Confirm password",
+        "type": "text"
+    },
+    "confirmPassword": "确认密码"
+}

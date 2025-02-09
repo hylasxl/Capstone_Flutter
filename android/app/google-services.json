@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "390096603454",
+    "project_id": "syncio-7a920",
+    "storage_bucket": "syncio-7a920.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390096603454:android:1ce9e3afb970d1ef13046f",
+        "android_client_info": {
+          "package_name": "com.example.syncio_capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390096603454-uetmtharmo6oil1uvrrlds0pl99rhdbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.syncio_capstone",
+            "certificate_hash": "5990046845107f4907367bac279fee391ba07733"
+          }
+        },
+        {
+          "client_id": "390096603454-02ub2k50epc0brhqfiadgnga4r5hkdup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqiD1meOBLGgiMgMZgcEaOSEF2ZzySNTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390096603454-02ub2k50epc0brhqfiadgnga4r5hkdup.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "390096603454-rv04t1ac1798fl2rmfr1qnqegtn29avp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.syncioCapstone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

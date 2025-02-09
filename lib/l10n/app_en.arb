@@ -1,0 +1,937 @@
+{
+    "@@locale": "en",
+    "@wcbackfs": {
+        "description": "Greeting message for returning users",
+        "type": "text"
+    },
+    "wcbackfs": "Welcome back, ",
+    "@wcbackss": {
+        "description": "Message indicating the user is missed",
+        "type": "text"
+    },
+    "wcbackss": "you've been missed!",
+    "@username": {
+        "description": "Label for the username field",
+        "type": "text"
+    },
+    "username": "username",
+    "@password": {
+        "description": "Label for the password field",
+        "type": "text"
+    },
+    "password": "password",
+    "@login": {
+        "description": "Label for the login button",
+        "type": "text"
+    },
+    "login": "login",
+    "@fpass": {
+        "description": "Text for forget password link",
+        "type": "text"
+    },
+    "fpass": "forget password?",
+    "@newto": {
+        "description": "Message for new users to sign up",
+        "type": "text"
+    },
+    "newto": "New to SyncIO, Sign Up",
+    "@lwgg": {
+        "description": "Login with Google text",
+        "type": "text"
+    },
+    "lwgg": "Login with Google",
+    "@nxt": {
+        "description": "Next",
+        "type": "text"
+    },
+    "nxt": "Continue",
+    "@wyn": {
+        "description": "What's your name?",
+        "type": "text"
+    },
+    "wyn": "What's your name?",
+    "@wynd": {
+        "description": "Enter the name you use in real life.",
+        "type": "text"
+    },
+    "wynd": "Enter the name you use in real life.",
+    "@ln": {
+        "description": "Last name",
+        "type": "text"
+    },
+    "ln": "Last name",
+    "@fn": {
+        "description": "First name",
+        "type": "text"
+    },
+    "fn": "First name",
+    "@iaha": {
+        "description": "I already have an account",
+        "type": "text"
+    },
+    "iaha": "I already have an account",
+    "@or": {
+        "description": "Or",
+        "type": "text"
+    },
+    "or": "Or",
+    "@wybd": {
+        "description": "What's your birthday?",
+        "type": "text"
+    },
+    "wybd": "What's your birthday?",
+    "@wybdd": {
+        "description": "Choose the date of birth. You can always make this private later.",
+        "type": "text"
+    },
+    "wybdd": "Choose the date of birth. You can always make this private later.",
+    "@bd": {
+        "description": "Birthday",
+        "type": "text"
+    },
+    "bd": "Birthday",
+    "@selectDate": {
+        "description": "Select Date",
+        "type": "text"
+    },
+    "selectDate": "Select Date",
+    "@gd": {
+        "description": "Gender",
+        "type": "text"
+    },
+    "gd": "Gender",
+    "@gdd": {
+        "description": "You can change who sees your gender on your profile later.",
+        "type": "text"
+    },
+    "gdd": "You can change who sees your gender on your profile later.",
+    "@male": {
+        "description": "Male",
+        "type": "text"
+    },
+    "male": "Male",
+    "@female": {
+        "description": "Female",
+        "type": "text"
+    },
+    "female": "Female",
+    "@other": {
+        "description": "Other",
+        "type": "text"
+    },
+    "other": "Other",
+    "@em": {
+        "description": "Email",
+        "type": "text"
+    },
+    "em": "Email",
+    "@emd": {
+        "description": "Enter the email where you can be contacted. No one will see this on your profile.",
+        "type": "text"
+    },
+    "emd": "Enter the email where you can be contacted. No one will see this on your profile.",
+    "@pee": {
+        "description": "Please enter email",
+        "type": "text"
+    },
+    "pee": "Please enter email",
+    "@pefn": {
+        "description": "Please enter first name",
+        "type": "text"
+    },
+    "pefn": "Please enter first name",
+    "@peln": {
+        "description": "Please enter last name",
+        "type": "text"
+    },
+    "peln": "Please enter last name",
+    "@pcgd": {
+        "description": "Please choose gender",
+        "type": "text"
+    },
+    "pcgd": "Please choose gender",
+    "@pepw": {
+        "description": "Please enter password",
+        "type": "text"
+    },
+    "pepw": "Please enter password",
+    "@pebd": {
+        "description": "Please enter birthday",
+        "type": "text"
+    },
+    "pebd": "Please enter birthday",
+    "@pwnv": {
+        "description": "Password is must be at least 8 letter l",
+        "type": "text"
+    },
+    "pwnv": "Password is must be at least 8-letter in length, and at least a number and a special character",
+    "@eaiu": {
+        "description": "Email is alreay in use",
+        "type": "text"
+    },
+    "eaiu": "Email is already in use",
+    "@eicf": {
+        "description": "Email format is not correct",
+        "type": "text"
+    },
+    "eicf": "Email format is not correct",
+    "@pw": {
+        "description": "Password",
+        "type": "text"
+    },
+    "pw": "Password",
+    "@pwd": {
+        "description": "Password description",
+        "type": "text"
+    },
+    "pwd": "Create a password with at least eight letters, one number and one special character. It should be something others can’t guess.",
+    "@urnd": {
+        "description": "Username description",
+        "type": "text"
+    },
+    "urnd": "The username is stored in our system to differentiate users.",
+    "@peusn": {
+        "description": "Please enter username",
+        "type": "text"
+    },
+    "peusn": "Please enter username",
+    "@peusnapw": {
+        "description": "Please enter username and password",
+        "type": "text"
+    },
+    "peusnapw": "Please enter username and password",
+    "@lge00": {
+        "description": "Login failed",
+        "type": "text"
+    },
+    "lge00": "Login failed",
+    "@lge01": {
+        "description": "username cannot be empty",
+        "type": "text"
+    },
+    "lge01": "username cannot be empty",
+    "@lge02": {
+        "description": "password cannot be empty",
+        "type": "text"
+    },
+    "lge02": "password cannot be empty",
+    "@lge03": {
+        "description": "the username is not correct",
+        "type": "text"
+    },
+    "lge03": "the username is not correct",
+    "@lge04": {
+        "description": "the account is deleted",
+        "type": "text"
+    },
+    "lge04": "the account is deleted",
+    "@lge05": {
+        "description": "the account is restricted by admin",
+        "type": "text"
+    },
+    "lge05": "the account is restricted by admin",
+    "@lge06": {
+        "description": "the account is banned by admin",
+        "type": "text"
+    },
+    "lge06": "the account is banned by admin",
+    "@lge07": {
+        "description": "the password is not correct",
+        "type": "text"
+    },
+    "lge07": "the password is not correct",
+    "@re01": {
+        "description": "missing required fields",
+        "type": "text"
+    },
+    "re01": "missing required fields",
+    "@mysqldbe01": {
+        "description": "error starting transaction",
+        "type": "text"
+    },
+    "mysqldbe01": "error starting transaction",
+    "@re02": {
+        "description": "username already exists",
+        "type": "text"
+    },
+    "re02": "username already exists",
+    "@re03": {
+        "description": "email already exists",
+        "type": "text"
+    },
+    "re03": "email already exists",
+    "@se01": {
+        "description": "error hashing password",
+        "type": "text"
+    },
+    "se01": "error hashing password",
+    "@re04": {
+        "description": "error creating account",
+        "type": "text"
+    },
+    "re04": "error creating account",
+    "@re05": {
+        "description": "error creating account avatar",
+        "type": "text"
+    },
+    "re05": "error creating account avatar",
+    "@re06": {
+        "description": "error creating account info",
+        "type": "text"
+    },
+    "re06": "error creating account info",
+    "@mysqldbe02": {
+        "description": "error committing transaction",
+        "type": "text"
+    },
+    "mysqldbe02": "error committing transaction",
+    "formatDate": "{day} {month}, {year}",
+    "@formatDate": {
+        "description": "Format date",
+        "type": "text",
+        "placeholders": {
+            "day": {
+                "type": "String",
+                "description": "Day of the month"
+            },
+            "month": {
+                "type": "String",
+                "description": "Month name"
+            },
+            "year": {
+                "type": "String",
+                "description": "Full year"
+            }
+        }
+    },
+    "@uma16yo": {
+        "description": "user must be more than 16 years old",
+        "type": "text"
+    },
+    "uma16yo": "User must be more than 16 years old",
+    "@usnaiu": {
+        "description": "username is already in use",
+        "type": "text"
+    },
+    "usnaiu": "Username is already in use",
+    "@avt": {
+        "description": "Avatar",
+        "type": "text"
+    },
+    "avt": "Avatar",
+    "@avtd": {
+        "description": "Avatar description",
+        "type": "text"
+    },
+    "avtd": "A profile picture representing the user's identity. It can be a photo or an illustration, and is typically used for personalization across platforms.",
+    "@simg": {
+        "description": "Select image",
+        "type": "text"
+    },
+    "simg": "Select image",
+    "@nimgs": {
+        "description": "No image selected",
+        "type": "text"
+    },
+    "nimgs": "No image selected",
+    "@re": {
+        "description": "Register failed",
+        "type": "text"
+    },
+    "re": "Register failed",
+    "@aue": {
+        "description": "Error when uploading image",
+        "type": "text"
+    },
+    "aue": "Error when uploading image",
+    "@rs": {
+        "description": "Register successfully",
+        "type": "text"
+    },
+    "rs": "Register successfully",
+    "@snt": {
+        "description": "Friend Request",
+        "type": "text"
+    },
+    "snt": "What are you thinking?",
+    "@syt": {
+        "description": "Share new thoughts",
+        "type": "text"
+    },
+    "syt": "Share your thoughts",
+    "@fr": {
+        "description": "Friend Request",
+        "type": "text"
+    },
+    "fr": "Friend Requests",
+    "newFeeds": "New Feeds",
+    "friend": "Friend",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "general": "General",
+    "@newFeeds": {
+        "description": "Label for new feeds",
+        "type": "text"
+    },
+    "@friend": {
+        "description": "Label for friend",
+        "type": "text"
+    },
+    "@messages": {
+        "description": "Label for messages",
+        "type": "text"
+    },
+    "@notifications": {
+        "description": "Label for notifications",
+        "type": "text"
+    },
+    "@general": {
+        "description": "Label for general",
+        "type": "text"
+    },
+    "@yfr": {
+        "description": "Your friends",
+        "type": "text"
+    },
+    "yfr": "Your friends",
+    "@sa": {
+        "description": "Show all",
+        "type": "text"
+    },
+    "sa": "Show all",
+    "@justNow": {
+        "description": "Indicates that something happened just now",
+        "type": "text"
+    },
+    "justNow": "Just now",
+    "@minuteAgo": {
+        "description": "Indicates how many minutes ago something happened",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of minutes"
+            }
+        }
+    },
+    "minuteAgo": "{count, plural, one{1 minute ago} other{{count} minutes ago}}",
+    "@hourAgo": {
+        "description": "Indicates how many hours ago something happened",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of hours"
+            }
+        }
+    },
+    "hourAgo": "{count, plural, one{1 hour ago} other{{count} hours ago}}",
+    "@dayAgo": {
+        "description": "Indicates how many days ago something happened",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of days"
+            }
+        }
+    },
+    "dayAgo": "{count, plural, one{1 day ago} other{{count} days ago}}",
+    "@weekAgo": {
+        "description": "Indicates how many weeks ago something happened",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of weeks"
+            }
+        }
+    },
+    "weekAgo": "{count, plural, one{1 week ago} other{{count} weeks ago}}",
+    "@monthAgo": {
+        "description": "Indicates how many months ago something happened",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of months"
+            }
+        }
+    },
+    "monthAgo": "{count, plural, one{1 month ago} other{{count} months ago}}",
+    "@yearAgo": {
+        "description": "Indicates how many years ago something happened",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of years"
+            }
+        }
+    },
+    "yearAgo": "{count, plural, one{1 year ago} other{{count} years ago}}",
+    "@accept": {
+        "description": "Accept",
+        "type": "text"
+    },
+    "accept": "Accept",
+    "@reject": {
+        "description": "Reject",
+        "type": "text"
+    },
+    "reject": "Reject",
+    "@accepted": {
+        "description": "Accepted",
+        "type": "text"
+    },
+    "accepted": "Accepted",
+    "@rejected": {
+        "description": "Rejected",
+        "type": "text"
+    },
+    "rejected": "Rejected",
+    "mutualFriends": "Mutual Friends",
+    "@mutualFriends": {
+        "description": "Label for mutual friends",
+        "type": "text"
+    },
+    "public": "Public",
+    "friendOnly": "Friend only",
+    "private": "Private",
+    "publishLate": "Publish Later",
+    "@public": {
+        "description": "Public",
+        "type": "text"
+    },
+    "@friendOnly": {
+        "description": "Friend only",
+        "type": "text"
+    },
+    "@private": {
+        "description": "Private",
+        "type": "text"
+    },
+    "@publishLate": {
+        "description": "Publish later",
+        "type": "text"
+    },
+    "@post_verb": {
+        "description": "Post",
+        "type": "text"
+    },
+    "post_verb": "Post",
+    "@whocanseepost": {
+        "description": "Who can see your post",
+        "type": "text"
+    },
+    "whocanseepost": "Who can see your post?",
+    "postAppearance": "Your post may appear in Feed, on your profile, in search results.",
+    "@postAppearance": {
+        "description": "Indicates where the user's post may appear",
+        "type": "text"
+    },
+    "@anyoneOnOrOff": {
+        "description": "Anyone on or off SyncIO",
+        "type": "text"
+    },
+    "anyoneOnOrOff": "Anyone on or off SyncIO",
+    "@yourFriendsOnSyncIO": {
+        "description": "Your friends on SyncIO",
+        "type": "text"
+    },
+    "yourFriendsOnSyncIO": "Your friends on SyncIO",
+    "@onlyMe": {
+        "description": "Only me",
+        "type": "text"
+    },
+    "onlyMe": "Only me",
+    "@cancel": {
+        "description": "Cancel",
+        "type": "text"
+    },
+    "cancel": "Cancel",
+    "photos": "Photos",
+    "tagFriends": "Tag friends",
+    "@photos": {
+        "description": "Label for photos",
+        "type": "text"
+    },
+    "@tagFriends": {
+        "description": "Label for tagging friends",
+        "type": "text"
+    },
+    "@selected": {
+        "description": "Selected",
+        "type": "text"
+    },
+    "selected": "Selected",
+    "@yourFriends": {
+        "description": "Your friends",
+        "type": "text"
+    },
+    "yourFriends": "Your friends",
+    "tagaperson": "with {personName}",
+    "@tagaperson": {
+        "description": "Translation for tagging a person",
+        "type": "text",
+        "placeholders": {
+            "personName": {
+                "type": "String",
+                "description": "Name of the person"
+            }
+        }
+    },
+    "tag2person": "with {person1name},{person2name}",
+    "@tag2person": {
+        "description": "Translation for tagging two persons",
+        "type": "text",
+        "placeholders": {
+            "person1name": {
+                "type": "String",
+                "description": "Name of the first person"
+            },
+            "person2name": {
+                "type": "String",
+                "description": "Name of the second person"
+            }
+        }
+    },
+    "tagmultiple": "with {person1name} and {count} other user",
+    "@tagmultiple": {
+        "description": "Translation for tagging multiple persons",
+        "type": "text",
+        "placeholders": {
+            "person1name": {
+                "type": "String",
+                "description": "Name of the first person"
+            },
+            "count": {
+                "type": "int",
+                "description": "Number of other users"
+            }
+        }
+    },
+    "@noRequest": {
+        "description": "No request",
+        "type": "text"
+    },
+    "noRequest": "No request",
+    "@postCreatedSuccessfully": {
+        "description": "Post created successfully",
+        "type": "text"
+    },
+    "postCreatedSuccessfully": "Post created successfully",
+    "@theme": {
+        "description": "Theme",
+        "type": "text"
+    },
+    "theme": "Theme",
+    "@language": {
+        "description": "Language",
+        "type": "text"
+    },
+    "language": "Language",
+    "@english": {
+        "description": "English",
+        "type": "text"
+    },
+    "english": "English",
+    "@vietnamese": {
+        "description": "Vietnamese",
+        "type": "text"
+    },
+    "vietnamese": "Vietnamese",
+    "@mandarinChinese": {
+        "description": "Mandarin Chinese",
+        "type": "text"
+    },
+    "mandarinChinese": "Simplified Chinese",
+    "languageScreenDescription": "Choose your preferred language to personalize your experience. Your selection will instantly update the app, helping you connect and engage with friends and communities in the language you’re most comfortable with.",
+    "@languageScreenDescription": {
+        "description": "Description for the language selection screen",
+        "type": "text"
+    },
+    "themeScreenDescription": "Select your preferred theme to customize the look and feel of the app. Whether you prefer a light or dark mode, your choice will instantly update, creating a browsing experience that suits your style.",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "@themeScreenDescription": {
+        "description": "Description for the theme selection screen",
+        "type": "text"
+    },
+    "@lightMode": {
+        "description": "Light mode",
+        "type": "text"
+    },
+    "@darkMode": {
+        "description": "Dark mode",
+        "type": "text"
+    },
+    "@signOut": {
+        "description": "Sign out",
+        "type": "text"
+    },
+    "signOut": "Sign out",
+    "comment": "{count, plural, one{1 comment} other{{count} comments}}",
+    "share": "{count, plural, one{1 share} other{{count} shares}}",
+    "@comment": {
+        "description": "Indicates the number of comments",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of comments"
+            }
+        }
+    },
+    "@share": {
+        "description": "Indicates the number of shares",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of shares"
+            }
+        }
+    },
+    "reply": "Reply",
+    "typeAComment": "Type a comment",
+    "noComment": "No comment",
+    "showReplies": "Show replies",
+    "hideReplies": "Hide replies",
+    "@reply": {
+        "description": "Reply",
+        "type": "text"
+    },
+    "@typeAComment": {
+        "description": "Type a comment",
+        "type": "text"
+    },
+    "@noComment": {
+        "description": "No comment",
+        "type": "text"
+    },
+    "@showReplies": {
+        "description": "Show replies",
+        "type": "text"
+    },
+    "@hideReplies": {
+        "description": "Hide replies",
+        "type": "text"
+    },
+    "sharePost": "Share post",
+    "sharePostSuccessfully": "Share post successfully",
+    "@sharePost": {
+        "description": "Share post",
+        "type": "text"
+    },
+    "@sharePostSuccessfully": {
+        "description": "Share post successfully",
+        "type": "text"
+    },
+    "friendsCount": "{count, plural, =0{No friends} one{1 friend} other{{count} friends}}",
+    "@friendsCount": {
+        "description": "Indicates the number of friends",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of friends"
+            }
+        }
+    },
+    "@addFriend": {
+        "description": "Add friend",
+        "type": "text"
+    },
+    "addFriend": "Add friend",
+    "@requestSent": {
+        "description": "Request sent",
+        "type": "text"
+    },
+    "requestSent": "Request sent",
+    "@recallRequest": {
+        "description": "Recall request",
+        "type": "text"
+    },
+    "recallRequest": "Recall request",
+    "@seeInformation": {
+        "description": "See information",
+        "type": "text"
+    },
+    "seeInformation": "See information",
+    "@nothingToShow": {
+        "description": "Indicates that there is nothing to show",
+        "type": "text"
+    },
+    "nothingToShow": "Nothing to show",
+    "@online": {
+        "description": "Online",
+        "type": "text"
+    },
+    "online": "Online",
+    "@offline": {
+        "description": "Offline",
+        "type": "text"
+    },
+    "offline": "Offline",
+    "@sentRequest": {
+        "description": "Sent request",
+        "type": "text"
+    },
+    "sentRequest": "Sent request",
+    "@cancelRequest": {
+        "description": "Cancel request",
+        "type": "text"
+    },
+    "cancelRequest": "Cancel request",
+    "@displayName": {
+        "description": "Display name",
+        "type": "text"
+    },
+    "displayName": "Display name",
+    "@phoneNumber": {
+        "description": "Phone number",
+        "type": "text"
+    },
+    "phoneNumber": "Phone number",
+    "materialStatus": "Material status",
+    "single": "Single",
+    "in_a_relationship": "In a relationship",
+    "engaged": "Engaged",
+    "married": "Married",
+    "in_a_civil_union": "In a civil union",
+    "in_a_domestic_partnership": "In a domestic partnership",
+    "in_an_open_relationship": "In an open relationship",
+    "its_complicated": "It's complicated",
+    "separated": "Separated",
+    "divorced": "Divorced",
+    "widowed": "Widowed",
+    "@materialStatus": {
+        "description": "Material status",
+        "type": "text"
+    },
+    "@single": {
+        "description": "Single",
+        "type": "text"
+    },
+    "@in_a_relationship": {
+        "description": "In a relationship",
+        "type": "text"
+    },
+    "@engaged": {
+        "description": "Engaged",
+        "type": "text"
+    },
+    "@married": {
+        "description": "Married",
+        "type": "text"
+    },
+    "@in_a_civil_union": {
+        "description": "In a civil union",
+        "type": "text"
+    },
+    "@in_a_domestic_partnership": {
+        "description": "In a domestic partnership",
+        "type": "text"
+    },
+    "@in_an_open_relationship": {
+        "description": "In an open relationship",
+        "type": "text"
+    },
+    "@its_complicated": {
+        "description": "It's complicated",
+        "type": "text"
+    },
+    "@separated": {
+        "description": "Separated",
+        "type": "text"
+    },
+    "@divorced": {
+        "description": "Divorced",
+        "type": "text"
+    },
+    "@widowed": {
+        "description": "Widowed",
+        "type": "text"
+    },
+    "@save": {
+        "description": "Save",
+        "type": "text"
+    },
+    "save": "Save",
+    "@displayType": {
+        "description": "Display type",
+        "type": "text"
+    },
+    "displayType": "Display type",
+    "emailRegistered": "This email has registered as credential method",
+    "forgetPassword": "Forget Password",
+    "@forgetPassword": {
+        "description": "Forget Password",
+        "type": "text"
+    },
+    "@emailRegistered": {
+        "description": "This email has registered as credential method",
+        "type": "text"
+    },
+    "verifyAccount": "Please input your email and password to verify your account",
+    "incorrectEmailOrUsername": "Email or username is incorrect, please input again",
+    "@verifyAccount": {
+        "description": "Prompt to input email and password to verify account",
+        "type": "text"
+    },
+    "@incorrectEmailOrUsername": {
+        "description": "Error message for incorrect email or username",
+        "type": "text"
+    },
+    "otpSent": "We've sent an OTP to your email, please check your email and input the OTP below. OTP is a six-digit pattern",
+    "@otpSent": {
+        "description": "Message indicating that an OTP has been sent to the user's email",
+        "type": "text"
+    },
+    "otpAttempts": "You have entered the OTP {count, plural, one{1 time} other{{count} times}}. You have {remaining, plural, one{1 attempt} other{{remaining} attempts}} left.",
+    "@otpAttempts": {
+        "description": "Message indicating the number of OTP attempts and remaining attempts",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "description": "The number of OTP attempts"
+            },
+            "remaining": {
+                "type": "int",
+                "description": "The number of remaining attempts"
+            }
+        }
+    },
+    "@resendOtp": {
+        "description": "Resend OTP",
+        "type": "text"
+    },
+    "resendOtp": "Resend OTP",
+    "sendEmailFailed": "Send email failed",
+    "sendEmailSuccessfully": "Send email successfully",
+    "resetPassword": "Reset password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "@sendEmailFailed": {
+        "description": "Send email failed",
+        "type": "text"
+    },
+    "@sendEmailSuccessfully": {
+        "description": "Send email successfully",
+        "type": "text"
+    },
+    "@resetPassword": {
+        "description": "Reset password",
+        "type": "text"
+    },
+    "@newPassword": {
+        "description": "New password",
+        "type": "text"
+    },
+    "@confirmPassword": {
+        "description": "Confirm password",
+        "type": "text"
+    }
+}

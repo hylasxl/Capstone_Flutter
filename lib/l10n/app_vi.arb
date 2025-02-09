@@ -1,0 +1,801 @@
+{
+    "@@locale": "vi",
+    "@wcbackfs": {
+        "description": "Greeting message for returning users",
+        "type": "text"
+    },
+    "wcbackfs": "Chào mừng trở lại, ",
+    "@wcbackss": {
+        "description": "Message indicating the user is missed",
+        "type": "text"
+    },
+    "wcbackss": "bạn đã bỏ lỡ!",
+    "@username": {
+        "description": "Label for the username field",
+        "type": "text"
+    },
+    "username": "tên tài khoản",
+    "@password": {
+        "description": "Label for the password field",
+        "type": "text"
+    },
+    "password": "mật khẩu",
+    "@login": {
+        "description": "Label for the login button",
+        "type": "text"
+    },
+    "login": "đăng nhập",
+    "@fpass": {
+        "description": "Text for forget password link",
+        "type": "text"
+    },
+    "fpass": "quên mật khẩu?",
+    "@newto": {
+        "description": "Message for new users to sign up",
+        "type": "text"
+    },
+    "newto": "Chưa có tài khoản SyncIO, Đăng ký",
+    "@lwgg": {
+        "description": "Login with Google text",
+        "type": "text"
+    },
+    "lwgg": "Đăng nhập bằng Google",
+    "@nxt": {
+        "description": "Next",
+        "type": "text"
+    },
+    "nxt": "Tiếp tục",
+    "@wyn": {
+        "description": "What's your name?",
+        "type": "text"
+    },
+    "wyn": "Tên của bạn là gì?",
+    "@wynd": {
+        "description": "Enter the name you use in real life.",
+        "type": "text"
+    },
+    "wynd": "Sử dụng tên thật của bạn.",
+    "@ln": {
+        "description": "Last name",
+        "type": "text"
+    },
+    "ln": "Tên",
+    "@fn": {
+        "description": "First name",
+        "type": "text"
+    },
+    "fn": "Họ",
+    "@iaha": {
+        "description": "I already have an account",
+        "type": "text"
+    },
+    "iaha": "Đã có tài khoản",
+    "@or": {
+        "description": "Or",
+        "type": "text"
+    },
+    "or": "Hoặc",
+    "@wybd": {
+        "description": "What's your birthday?",
+        "type": "text"
+    },
+    "wybd": "Sinh nhật của bạn là gì?",
+    "@wybdd": {
+        "description": "Choose the date of birth. You can always make this private later.",
+        "type": "text"
+    },
+    "wybdd": "Chọn ngày sinh. Bạn có thể đặt ngày sinh về chế độ riêng tư bất cứ lúc nào.",
+    "@bd": {
+        "description": "Birthday",
+        "type": "text"
+    },
+    "bd": "Sinh nhật",
+    "@selectDate": {
+        "description": "Select Date",
+        "type": "text"
+    },
+    "selectDate": "Chọn ngày",
+    "@gd": {
+        "description": "Gender",
+        "type": "text"
+    },
+    "gd": "Giới tính",
+    "@gdd": {
+        "description": "You can change who sees your gender on your profile later.",
+        "type": "text"
+    },
+    "gdd": "Bạn có thể thay đổi ai có thể thấy thông tin này bất cứ lúc nào.",
+    "@male": {
+        "description": "Male",
+        "type": "text"
+    },
+    "male": "Nam",
+    "@female": {
+        "description": "Female",
+        "type": "text"
+    },
+    "female": "Nữ",
+    "@other": {
+        "description": "Other",
+        "type": "text"
+    },
+    "other": "Khác",
+    "@em": {
+        "description": "Email",
+        "type": "text"
+    },
+    "em": "Email",
+    "@emd": {
+        "description": "Enter the email where you can be contacted. No one will see this on your profile.",
+        "type": "text"
+    },
+    "emd": "Nhập Email của bạn mà chúng tôi có thể liên lạc. Thông tin này được ẩn trên profile của bạn.",
+    "@pee": {
+        "description": "Please enter email",
+        "type": "text"
+    },
+    "pee": "Hãy nhập Email",
+    "@pefn": {
+        "description": "Please enter first name",
+        "type": "text"
+    },
+    "pefn": "Hãy nhập họ",
+    "@peln": {
+        "description": "Please enter last name",
+        "type": "text"
+    },
+    "peln": "Hãy nhập tên",
+    "@pcgd": {
+        "description": "Please choose gender",
+        "type": "text"
+    },
+    "pcgd": "Hãy chọn giới tính",
+    "@pepw": {
+        "description": "Please enter password",
+        "type": "text"
+    },
+    "pepw": "Hãy nhập mật khẩu",
+    "@pwnv": {
+        "description": "Password is must be at least 8 letter l",
+        "type": "text"
+    },
+    "pwnv": "Mật khẩu phải có ít nhất 8 ký tự, ít nhất một chữ số và một ký tự đặc biệt",
+    "@eaiu": {
+        "description": "Email is alreay in use",
+        "type": "text"
+    },
+    "eaiu": "Email đã được sử dụng",
+    "@eicf": {
+        "description": "Email format is not correct",
+        "type": "text"
+    },
+    "eicf": "Định dạng Email không đúng",
+    "@pw": {
+        "description": "Password",
+        "type": "text"
+    },
+    "pw": "Mật khẩu",
+    "@pwd": {
+        "description": "Password description",
+        "type": "text"
+    },
+    "pwd": "Tạo mật khẩu có ít nhất tám kí tự, bao gồm ít nhất một chữ số và một ký tự đặc biệt. Mật khẩu được tạo nên khó đoán với tất cả mọi người.",
+    "@urnd": {
+        "description": "Username description",
+        "type": "text"
+    },
+    "urnd": "Tên tài khoản được lưu trong hệ thống để phân biệt giữa các người dùng.",
+    "@peusn": {
+        "description": "Please enter username",
+        "type": "text"
+    },
+    "peusn": "Hãy nhập tên tài khoản",
+    "@peusnapw": {
+        "description": "Please enter username and password",
+        "type": "text"
+    },
+    "peusnapw": "Hãy nhập tên tài khoản và mật khẩu",
+    "@lge00": {
+        "description": "Login failed",
+        "type": "text"
+    },
+    "lge00": "Đăng nhập thất bại",
+    "@lge01": {
+        "description": "tên người dùng không được để trống",
+        "type": "text"
+    },
+    "lge01": "tên người dùng không được để trống",
+    "@lge02": {
+        "description": "mật khẩu không được để trống",
+        "type": "text"
+    },
+    "lge02": "mật khẩu không được để trống",
+    "@lge03": {
+        "description": "tên người dùng không đúng",
+        "type": "text"
+    },
+    "lge03": "tên người dùng không đúng",
+    "@lge04": {
+        "description": "tài khoản đã bị xóa",
+        "type": "text"
+    },
+    "lge04": "tài khoản đã bị xóa",
+    "@lge05": {
+        "description": "tài khoản bị hạn chế bởi quản trị viên",
+        "type": "text"
+    },
+    "lge05": "tài khoản bị hạn chế bởi quản trị viên",
+    "@lge06": {
+        "description": "tài khoản bị cấm bởi quản trị viên",
+        "type": "text"
+    },
+    "lge06": "tài khoản bị cấm bởi quản trị viên",
+    "@lge07": {
+        "description": "mật khẩu không đúng",
+        "type": "text"
+    },
+    "lge07": "mật khẩu không đúng",
+    "@re01": {
+        "description": "thiếu các trường bắt buộc",
+        "type": "text"
+    },
+    "re01": "thiếu các trường bắt buộc",
+    "@mysqldbe01": {
+        "description": "lỗi khi bắt đầu transaction",
+        "type": "text"
+    },
+    "mysqldbe01": "lỗi khi bắt đầu transaction",
+    "@re02": {
+        "description": "tên người dùng đã tồn tại",
+        "type": "text"
+    },
+    "re02": "tên người dùng đã tồn tại",
+    "@re03": {
+        "description": "email đã tồn tại",
+        "type": "text"
+    },
+    "re03": "email đã tồn tại",
+    "@se01": {
+        "description": "lỗi mã hóa mật khẩu",
+        "type": "text"
+    },
+    "se01": "lỗi mã hóa mật khẩu",
+    "@re04": {
+        "description": "lỗi tạo tài khoản",
+        "type": "text"
+    },
+    "re04": "lỗi tạo tài khoản",
+    "@re05": {
+        "description": "lỗi tạo avatar tài khoản",
+        "type": "text"
+    },
+    "re05": "lỗi tạo avatar tài khoản",
+    "@re06": {
+        "description": "lỗi tạo thông tin tài khoản",
+        "type": "text"
+    },
+    "re06": "lỗi tạo thông tin tài khoản",
+    "@mysqldbe02": {
+        "description": "lỗi commit transaction",
+        "type": "text"
+    },
+    "mysqldbe02": "lỗi commit transaction",
+    "@pebd": {
+        "description": "Please enter birthday",
+        "type": "text"
+    },
+    "pebd": "Hãy chọn sinh nhật của bạn",
+    "formatDate": "Ngày {day} tháng {month} năm {year}",
+    "@formatDate": {
+        "description": "Format date",
+        "type": "text",
+        "placeholders": {
+            "day": {
+                "type": "String",
+                "description": "Day of the month"
+            },
+            "month": {
+                "type": "String",
+                "description": "Month name"
+            },
+            "year": {
+                "type": "String",
+                "description": "Full year"
+            }
+        }
+    },
+    "@uma16yo": {
+        "description": "user must be more than 16 years old",
+        "type": "text"
+    },
+    "uma16yo": "Nguời dùng phải trên 16 tuổi",
+    "@usnaiu": {
+        "description": "username is already in use",
+        "type": "text"
+    },
+    "usnaiu": "Tên người dùng đã được sử dụng",
+    "@avt": {
+        "description": "Avatar",
+        "type": "text"
+    },
+    "avt": "Ảnh đại diện",
+    "@avtd": {
+        "description": "Avatar description",
+        "type": "text"
+    },
+    "avtd": "Ảnh đại diện cá nhân của bạn thể hiện đặc điểm nhận dạng. Nó có thể là một bức ảnh hoặc một hình minh họa và thường được sử dụng để cá nhân hóa trên các nền tảng.",
+    "@simg": {
+        "description": "Select image",
+        "type": "text"
+    },
+    "simg": "Chọn ảnh",
+    "@nimgs": {
+        "description": "No image selected",
+        "type": "text"
+    },
+    "nimgs": "Không có ảnh nào được chọn",
+    "@re": {
+        "description": "Register failed",
+        "type": "text"
+    },
+    "re": "Đăng ký thất bại",
+    "@aue": {
+        "description": "Error when uploading image",
+        "type": "text"
+    },
+    "aue": "Có lỗi xảy ra khi tạo ảnh",
+    "@rs": {
+        "description": "Register successfully",
+        "type": "text"
+    },
+    "rs": "Đăng ký thành công",
+    "@snt": {
+        "description": "Share new thoughts",
+        "type": "text"
+    },
+    "snt": "Bạn đang nghĩ gì?",
+    "@syt": {
+        "description": "Share new thoughts",
+        "type": "text"
+    },
+    "syt": "Chia sẻ cảm xúc của bạn",
+    "@fr": {
+        "description": "Friend Request",
+        "type": "text"
+    },
+    "fr": "Yêu cầu kết bạn",
+    "newFeeds": "Tin",
+    "friend": "Bạn bè",
+    "messages": "Tin nhắn",
+    "notifications": "Thông báo",
+    "general": "Chung",
+    "@newFeeds": {
+        "description": "New Feeds",
+        "type": "text"
+    },
+    "@friend": {
+        "description": "Friend",
+        "type": "text"
+    },
+    "@messages": {
+        "description": "Messages",
+        "type": "text"
+    },
+    "@notifications": {
+        "description": "Notifications",
+        "type": "text"
+    },
+    "@general": {
+        "description": "General",
+        "type": "text"
+    },
+    "@yfr": {
+        "description": "Your friends",
+        "type": "text"
+    },
+    "yfr": "Bạn bè",
+    "@sa": {
+        "description": "Show all",
+        "type": "text"
+    },
+    "sa": "Xem tất cả",
+    "justNow": "Vừa xong",
+    "minuteAgo": "{count, plural, one{1 phút} other{{count} phút}}",
+    "hourAgo": "{count, plural, one{1 giờ} other{{count} giờ}}",
+    "dayAgo": "{count, plural, one{1 ngày} other{{count} ngày}}",
+    "weekAgo": "{count, plural, one{1 tuần} other{{count} tuần}}",
+    "monthAgo": "{count, plural, one{1 tháng} other{{count} tháng}}",
+    "yearAgo": "{count, plural, one{1 năm} other{{count} năm}}",
+    "@accept": {
+        "description": "Accept",
+        "type": "text"
+    },
+    "accept": "Chấp nhận",
+    "@reject": {
+        "description": "Reject",
+        "type": "text"
+    },
+    "reject": "Từ chối",
+    "@accepted": {
+        "description": "Accepted",
+        "type": "text"
+    },
+    "accepted": "Đã chấp nhận",
+    "@rejected": {
+        "description": "Rejected",
+        "type": "text"
+    },
+    "rejected": "Đã từ chối",
+    "mutualFriends": "Bạn chung",
+    "@mutualFriends": {
+        "description": "Mutual Friends",
+        "type": "text"
+    },
+    "public": "Công khai",
+    "friendOnly": "Chỉ bạn bè",
+    "private": "Riêng tư",
+    "publishLate": "Đăng sau",
+    "@public": {
+        "description": "Public",
+        "type": "text"
+    },
+    "@friendOnly": {
+        "description": "Friend only",
+        "type": "text"
+    },
+    "@private": {
+        "description": "Private",
+        "type": "text"
+    },
+    "@publishLate": {
+        "description": "Publish late",
+        "type": "text"
+    },
+    "@post_verb": {
+        "description": "Post",
+        "type": "text"
+    },
+    "post_verb": "Đăng",
+    "@whocanseepost": {
+        "description": "Who can see your post",
+        "type": "text"
+    },
+    "whocanseepost": "Ai có thể xem bài viết của bạn?",
+    "@postAppearance": {
+        "description": "Indicates where the user's post may appear",
+        "type": "text"
+    },
+    "postAppearance": "Bài viết của bạn có thể xuất hiện trong Bảng tin, trên hồ sơ của bạn, trong kết quả tìm kiếm.",
+    "@anyoneOnOrOff": {
+        "description": "Anyone on or off SyncIO",
+        "type": "text"
+    },
+    "anyoneOnOrOff": "Bất kỳ ai trên SyncIO",
+    "@yourFriendsOnSyncIO": {
+        "description": "Your friends on SyncIO",
+        "type": "text"
+    },
+    "yourFriendsOnSyncIO": "Bạn bè của bạn trên SyncIO",
+    "@onlyMe": {
+        "description": "Only me",
+        "type": "text"
+    },
+    "onlyMe": "Chỉ mình tôi",
+    "@cancel": {
+        "description": "Cancel",
+        "type": "text"
+    },
+    "cancel": "Hủy",
+    "photos": "Ảnh",
+    "tagFriends": "Gắn thẻ bạn bè",
+    "@photos": {
+        "description": "Photos",
+        "type": "text"
+    },
+    "@tagFriends": {
+        "description": "Tag friends",
+        "type": "text"
+    },
+    "selected": "Đã chọn",
+    "@selected": {
+        "description": "Selected",
+        "type": "text"
+    },
+    "yourFriends": "Bạn bè của bạn",
+    "@yourFriends": {
+        "description": "Your friends",
+        "type": "text"
+    },
+    "tagaperson": "với {personName}",
+    "@tagaperson": {
+        "description": "with {personName}",
+        "type": "text",
+        "placeholders": {
+            "personName": {
+                "type": "String",
+                "description": "Name of the person"
+            }
+        }
+    },
+    "tag2person": "với {person1name}, {person2name}",
+    "@tag2person": {
+        "description": "with {person1name}, {person2name}",
+        "type": "text",
+        "placeholders": {
+            "person1name": {
+                "type": "String",
+                "description": "Name of the first person"
+            },
+            "person2name": {
+                "type": "String",
+                "description": "Name of the second person"
+            }
+        }
+    },
+    "tagmultiple": "với {person1name} và {count} người dùng khác",
+    "@tagmultiple": {
+        "description": "with {person1name} and {count} other user",
+        "type": "text",
+        "placeholders": {
+            "person1name": {
+                "type": "String",
+                "description": "Name of the first person"
+            },
+            "count": {
+                "type": "String",
+                "description": "Number of other users"
+            }
+        }
+    },
+    "@noRequest": {
+        "description": "No request",
+        "type": "text"
+    },
+    "noRequest": "Không có yêu cầu",
+    "@postCreatedSuccessfully": {
+        "description": "Post created successfully",
+        "type": "text"
+    },
+    "postCreatedSuccessfully": "Bài viết đã được đăng thành công",
+    "@theme": {
+        "description": "Theme",
+        "type": "text"
+    },
+    "theme": "Chủ đề",
+    "@language": {
+        "description": "Language",
+        "type": "text"
+    },
+    "language": "Ngôn ngữ",
+    "english": "Tiếng Anh",
+    "vietnamese": "Tiếng Việt",
+    "mandarinChinese": "Tiếng Trung Quốc (Giản thể)",
+    "@languageScreenDescription": {
+        "description": "Choose your preferred language to personalize your experience. Your selection will instantly update the app, helping you connect and engage with friends and communities in the language you’re most comfortable with.",
+        "type": "text"
+    },
+    "languageScreenDescription": "Chọn ngôn ngữ để cá nhân hóa trải nghiệm của bạn. Sự thay đổi của bạn sẽ cập nhật ứng dụng ngay lập tức, giúp bạn kết nối và tương tác với bạn bè và cộng đồng bằng ngôn ngữ mà bạn cảm thấy thoải mái nhất.",
+    "themeScreenDescription": "Chọn chủ đề ưa thích của bạn để tùy chỉnh giao diện và cảm giác của ứng dụng. Cho dù bạn thích chế độ sáng hay tối, sự lựa chọn của bạn sẽ cập nhật ngay lập tức, tạo ra trải nghiệm duyệt web phù hợp với phong cách của bạn.",
+    "lightMode": "Chế độ sáng",
+    "darkMode": "Chế độ tối",
+    "@signOut": {
+        "description": "Sign out",
+        "type": "text"
+    },
+    "signOut": "Đăng xuất",
+    "comment": "{count, plural, one{1 bình luận} other{{count} bình luận}}",
+    "share": "{count, plural, one{1 chia sẻ} other{{count} chia sẻ}}",
+    "@comment": {
+        "description": "Comment count",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "String",
+                "description": "Number of comments"
+            }
+        }
+    },
+    "@share": {
+        "description": "Share count",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "String",
+                "description": "Number of shares"
+            }
+        }
+    },
+    "reply": "Trả lời",
+    "typeAComment": "Viết bình luận",
+    "noComment": "Không có bình luận",
+    "showReplies": "Hiển thị trả lời",
+    "hideReplies": "Ẩn trả lời",
+    "@reply": {
+        "description": "Reply",
+        "type": "text"
+    },
+    "@typeAComment": {
+        "description": "Type a comment",
+        "type": "text"
+    },
+    "@noComment": {
+        "description": "No comment",
+        "type": "text"
+    },
+    "@showReplies": {
+        "description": "Show replies",
+        "type": "text"
+    },
+    "@hideReplies": {
+        "description": "Hide replies",
+        "type": "text"
+    },
+    "sharePost": "Chia sẻ bài viết",
+    "sharePostSuccessfully": "Chia sẻ bài viết thành công",
+    "@sharePost": {
+        "description": "Share post",
+        "type": "text"
+    },
+    "@sharePostSuccessfully": {
+        "description": "Share post successfully",
+        "type": "text"
+    },
+    "friendsCount": "{count, plural, =0{Không có bạn bè} one{1 bạn bè} other{{count} bạn bè}}",
+    "@friendsCount": {
+        "description": "Number of friends",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "String",
+                "description": "Number of friends"
+            }
+        }
+    },
+    "@addFriend": {
+        "description": "Add friend",
+        "type": "text"
+    },
+    "addFriend": "Thêm bạn",
+    "@requestSent": {
+        "description": "Request sent",
+        "type": "text"
+    },
+    "requestSent": "Yêu cầu đã gửi",
+    "@recallRequest": {
+        "description": "Recall request",
+        "type": "text"
+    },
+    "recallRequest": "Thu hồi yêu cầu",
+    "@seeInformation": {
+        "description": "See information",
+        "type": "text"
+    },
+    "seeInformation": "Xem thông tin",
+    "nothingToShow": "Không có gì để hiển thị",
+    "@nothingToShow": {
+        "description": "Nothing to show",
+        "type": "text"
+    },
+    "@online": {
+        "description": "Online",
+        "type": "text"
+    },
+    "online": "Trực tuyến",
+    "@offline": {
+        "description": "Offline",
+        "type": "text"
+    },
+    "offline": "Ngoại tuyến",
+    "@sentRequest": {
+        "description": "Sent request",
+        "type": "text"
+    },
+    "sentRequest": "Đã gửi yêu cầu",
+    "@cancelRequest": {
+        "description": "Cancel request",
+        "type": "text"
+    },
+    "cancelRequest": "Hủy yêu cầu",
+    "@displayName": {
+        "description": "Display name",
+        "type": "text"
+    },
+    "displayName": "Tên hiển thị",
+    "@phoneNumber": {
+        "description": "Label for the phone number field",
+        "type": "text"
+    },
+    "phoneNumber": "Số điện thoại",
+    "materialStatus": "Tình trạng hôn nhân",
+    "single": "Độc thân",
+    "in_a_relationship": "Đang hẹn hò",
+    "engaged": "Đã đính hôn",
+    "married": "Đã kết hôn",
+    "in_a_civil_union": "Trong một liên minh dân sự",
+    "in_a_domestic_partnership": "Trong một mối quan hệ gia đình",
+    "in_an_open_relationship": "Trong một mối quan hệ mở",
+    "its_complicated": "Phức tạp",
+    "separated": "Ly thân",
+    "divorced": "Đã ly hôn",
+    "widowed": "Góa",
+    "@save": {
+        "description": "Save",
+        "type": "text"
+    },
+    "save": "Lưu",
+    "@displayType": {
+        "description": "Display type",
+        "type": "text"
+    },
+    "displayType": "Hiển thị",
+    "@emailRegistered": {
+        "description": "This email has registered as credential method",
+        "type": "text"
+    },
+    "emailRegistered": "Email này đã được đăng ký làm phương thức xác thực",
+    "@forgetPassword": {
+        "description": "Forget Password",
+        "type": "text"
+    },
+    "forgetPassword": "Quên mật khẩu",
+    "@verifyAccount": {
+        "description": "Please input your email and password to verify your account",
+        "type": "text"
+    },
+    "verifyAccount": "Vui lòng nhập email và mật khẩu của bạn để xác minh tài khoản của bạn",
+    "@incorrectEmailOrUsername": {
+        "description": "Email or username is incorrect, please input again",
+        "type": "text"
+    },
+    "incorrectEmailOrUsername": "Email hoặc tên người dùng không đúng, vui lòng nhập lại",
+    "otpSent": "Chúng tôi đã gửi mã OTP đến email của bạn, vui lòng kiểm tra email và nhập mã OTP bên dưới. OTP là một mẫu gồm sáu chữ số",
+    "@otpSent": {
+        "description": "We've sent an OTP to your email, please check your email and input the OTP below. OTP is a six-digit pattern",
+        "type": "text"
+    },
+    "@otpAttempts": {
+        "description": "Message showing the number of OTP attempts and times left",
+        "type": "text",
+        "placeholders": {
+            "count": {
+                "type": "String",
+                "description": "Number of OTP attempts"
+            },
+            "timesLeft": {
+                "type": "String",
+                "description": "Number of attempts left"
+            }
+        }
+    },
+    "otpAttempts": "Bạn đã nhập OTP {count, plural, one{1 lần} other{{count} lần}}. Bạn còn {timesLeft, plural, one{1 lần} other{{timesLeft} lần}} để thử.",
+    "resendOtp": "Gửi lại OTP",
+    "@resendOtp": {
+        "description": "Resend OTP",
+        "type": "text"
+    },
+    "@sendEmailFailed": {
+        "description": "Send email failed",
+        "type": "text"
+    },
+    "sendEmailFailed": "Gửi email thất bại",
+    "@sendEmailSuccessfully": {
+        "description": "Send email successfully",
+        "type": "text"
+    },
+    "sendEmailSuccessfully": "Gửi email thành công",
+    "@resetPassword": {
+        "description": "Reset password",
+        "type": "text"
+    },
+    "resetPassword": "Đặt lại mật khẩu",
+    "@newPassword": {
+        "description": "New password",
+        "type": "text"
+    },
+    "newPassword": "Mật khẩu mới",
+    "@confirmPassword": {
+        "description": "Confirm password",
+        "type": "text"
+    },
+    "confirmPassword": "Xác nhận mật khẩu"
+}
