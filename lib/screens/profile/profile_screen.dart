@@ -243,8 +243,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
         isRequestSent = profileData!.isFriend;
         isBlocked = profileData!.isBlocked;
       });
-
-      print(profileData!.isBlocked);
     } catch (e) {
       throw Exception(e);
     }
@@ -588,29 +586,77 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Widget _buildSendOrCancelRequestAction(BuildContext context) {
-    return SizedBox(
-      width: 390,
-      child: ElevatedButton(
-        onPressed: () async {
-          if (!isRequestSent) {
-            await _sendFriendRequest(context);
-          } else {
-            await _cancelFriendRequest(context);
-          }
-        },
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(!isRequestSent ? Icons.send : Icons.close,
-                color: Colors.white),
-            SizedBox(width: 5),
-            Text(
-              addContent,
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ],
+    return Row(
+      children: [
+        SizedBox(
+          width: 180,
+          child: ElevatedButton(
+              onPressed: () async {
+                if (currentUserID == null) return;
+                final ResolveFriendFollowRequest request =
+                    ResolveFriendFollowRequest(
+                        fromAccountID: currentUserID!,
+                        toAccountID: widget.userID.toString(),
+                        action:
+                            profileData!.isFollowed ? "unfollow" : "follow");
+                try {
+                  final response =
+                      await FriendService().resolveFriendFollow(request);
+                  if (response.success!) {
+                    setState(() {
+                      profileData!.isFollowed = !profileData!.isFollowed;
+                    });
+                  }
+                } catch (e) {
+                  throw Exception(e);
+                }
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    profileData!.isFollowed
+                        ? Icons.remove
+                        : Icons.arrow_circle_right,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 5),
+                  Text(
+                    profileData!.isFollowed ? "Unfollow" : "Follow",
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  )
+                ],
+              )),
         ),
-      ),
+        SizedBox(
+          width: 20,
+        ),
+        SizedBox(
+          width: 180,
+          child: ElevatedButton(
+            onPressed: () async {
+              if (!isRequestSent) {
+                await _sendFriendRequest(context);
+              } else {
+                await _cancelFriendRequest(context);
+              }
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(!isRequestSent ? Icons.send : Icons.close,
+                    color: Colors.white),
+                SizedBox(width: 5),
+                Text(
+                  addContent,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
     );
   }
 

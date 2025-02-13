@@ -20,6 +20,7 @@ class ApiEndpoints {
       "${ApiVersioning.version}/users/verify-username-email";
   static String changePassword =
       "${ApiVersioning.version}/users/change-password";
+  static String searchAccount = "${ApiVersioning.version}/users/search-account";
 
   static String getPendingList =
       "${ApiVersioning.version}/friends/get-pending-list";
@@ -80,4 +81,8 @@ class ApiEndpoints {
       "${ApiVersioning.version}/messages/action-message";
   static String receiverMarkMessageAsRead =
       "${ApiVersioning.version}/messages/receiver-mark-message-as-read";
+
+  static String reportPost = "${ApiVersioning.version}/moderation/report-post";
+  static String reportAccount =
+      "${ApiVersioning.version}/moderation/report-account";
 }

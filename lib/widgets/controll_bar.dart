@@ -13,8 +13,8 @@ class ControllBar extends StatelessWidget implements PreferredSizeWidget {
             offset: Offset(-40, -5),
             child: Image.asset(
               "assets/icon/logo-narrow-spacing.png",
-              width: 200 ,
-              height: 112.5 ,
+              width: 200,
+              height: 112.5,
               fit: BoxFit.contain,
             )),
         actions: [
@@ -22,6 +22,7 @@ class ControllBar extends StatelessWidget implements PreferredSizeWidget {
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
+                Navigator.pushNamed(context, "searchScreen");
               },
             ),
         ],

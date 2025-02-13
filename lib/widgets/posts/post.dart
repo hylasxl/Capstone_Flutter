@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skeletonizer/skeletonizer.dart';
+import 'package:syncio_capstone/services/moderation_service.dart';
 import 'package:syncio_capstone/services/post_service.dart';
 import 'package:syncio_capstone/services/types.dart';
 import 'package:syncio_capstone/providers/theme_provider.dart';
@@ -20,6 +21,8 @@ class Post extends StatefulWidget {
 
 class _PostState extends State<Post> {
   int? userID;
+  String? selectedReason;
+  TextEditingController otherController = TextEditingController();
 
   @override
   void initState() {
@@ -184,6 +187,102 @@ class _PostState extends State<Post> {
     return userID == widget.postToDisplay.account.accountID;
   }
 
+  Future<void> _onReportPost(BuildContext context) async {
+    final userID = await Helpers().getUserId();
+    if (userID == null || selectedReason == null) return;
+    final ReportPost request = ReportPost(
+        postId: widget.postToDisplay.postId,
+        reportedBy: userID,
+        reason:
+            selectedReason == "Other" ? otherController.text : selectedReason!);
+    try {
+      final ReportResponse response =
+          await ModerationService().reportPost(request);
+      if (response.success!) {}
+    } catch (e) {
+      debugPrint(e.toString());
+      throw Exception(e);
+    } finally {
+      Navigator.of(context).pop();
+    }
+  }
+
+  void _onReportBottomSheetShow() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text("Select a reason to report",
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  Divider(),
+                  RadioListTile<String>(
+                    title: Text("Spam"),
+                    value: "Spam",
+                    groupValue: selectedReason,
+                    onChanged: (value) {
+                      setState(() => selectedReason = value);
+                    },
+                  ),
+                  RadioListTile<String>(
+                    title: Text("Harassment"),
+                    value: "Harassment",
+                    groupValue: selectedReason,
+                    onChanged: (value) {
+                      setState(() => selectedReason = value);
+                    },
+                  ),
+                  RadioListTile<String>(
+                    title: Text("Misinformation"),
+                    value: "Misinformation",
+                    groupValue: selectedReason,
+                    onChanged: (value) {
+                      setState(() => selectedReason = value);
+                    },
+                  ),
+                  RadioListTile<String>(
+                    title: Text("Other"),
+                    value: "Other",
+                    groupValue: selectedReason,
+                    onChanged: (value) {
+                      setState(() => selectedReason = value);
+                    },
+                  ),
+                  if (selectedReason == "Other")
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0),
+                      child: TextField(
+                        controller: otherController,
+                        decoration: InputDecoration(
+                          labelText: "Enter reason",
+                          border: OutlineInputBorder(),
+                        ),
+                      ),
+                    ),
+                  SizedBox(height: 10),
+                  ElevatedButton(
+                    onPressed: () async {
+                      await _onReportPost(context);
+                      Navigator.pop(context);
+                    },
+                    child: Text("Submit"),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
   void _showContextMenu(BuildContext context, DisplayPost post) {
     showModalBottomSheet(
         context: context,
@@ -208,7 +307,9 @@ class _PostState extends State<Post> {
                 ListTile(
                   leading: Icon(Icons.warning),
                   title: Text("Report"),
-                  onTap: () {},
+                  onTap: () {
+                    _onReportBottomSheetShow();
+                  },
                 ),
             ],
           );
@@ -253,51 +354,48 @@ class _PostState extends State<Post> {
               children: [
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   SizedBox(
-                    child: Row(
-                      children: [
-                        GestureDetector(
-                          onTap: onAvatarTap,
-                          child: CircleAvatar(
-                            radius: 25,
-                            backgroundColor: Colors.transparent,
-                            backgroundImage: NetworkImage(
-                                widget.postToDisplay.account.avatarURL),
-                          ),
+                      child: Row(
+                    children: [
+                      GestureDetector(
+                        onTap: onAvatarTap,
+                        child: CircleAvatar(
+                          radius: 25,
+                          backgroundColor: Colors.transparent,
+                          backgroundImage: NetworkImage(
+                              widget.postToDisplay.account.avatarURL),
                         ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
+                      ),
+                      SizedBox(width: 5),
+                      Expanded(
+                        // Ensures the name and timestamp take up available space
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               widget.postToDisplay.account.displayName,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 16),
+                              overflow:
+                                  TextOverflow.ellipsis, // Prevents overflow
+                              maxLines: 1, // Ensures it remains on one line
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Text.rich(
-                                  TextSpan(
-                                    children: [
-                                      TextSpan(
-                                        text: TimeUtils(
-                                                timestamp: widget
-                                                    .postToDisplay.createdAt)
-                                            .convertToText(context),
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Theme.of(context)
-                                              .textTheme
-                                              .bodyLarge!
-                                              .color!
-                                              .withOpacity(0.7),
-                                        ),
-                                      ),
-                                    ],
+                                Text(
+                                  TimeUtils(
+                                          timestamp:
+                                              widget.postToDisplay.createdAt)
+                                      .convertToText(context),
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Theme.of(context)
+                                        .textTheme
+                                        .bodyLarge!
+                                        .color!
+                                        .withOpacity(0.7),
                                   ),
+                                  overflow: TextOverflow.ellipsis,
                                 ),
                                 SizedBox(width: 4),
                                 Container(
@@ -325,17 +423,14 @@ class _PostState extends State<Post> {
                             )
                           ],
                         ),
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.5,
-                        ),
-                        GestureDetector(
-                          onTap: () =>
-                              _showContextMenu(context, widget.postToDisplay),
-                          child: Icon(Icons.more_vert),
-                        )
-                      ],
-                    ),
-                  ),
+                      ),
+                      GestureDetector(
+                        onTap: () =>
+                            _showContextMenu(context, widget.postToDisplay),
+                        child: Icon(Icons.more_vert),
+                      )
+                    ],
+                  )),
                   SizedBox(
                     height: 10,
                   ),

@@ -1956,7 +1956,7 @@ class GetProfileInfoResponse {
   final PrivacyIndices privacyIndices;
   final bool isFriend;
   final bool isBlocked;
-  final bool isFollowed;
+  bool isFollowed;
   final int timestamp;
   final String? error;
 
@@ -2893,5 +2893,90 @@ class ReceiverMarkMessageAsReadResponse {
   factory ReceiverMarkMessageAsReadResponse.fromJson(
       Map<String, dynamic> json) {
     return ReceiverMarkMessageAsReadResponse(success: json['success'] ?? false);
+  }
+}
+
+class ReportPost {
+  final int postId;
+  final int reportedBy;
+  final String reason;
+
+  ReportPost(
+      {required this.postId, required this.reportedBy, required this.reason});
+
+  Map<String, dynamic> toJson() {
+    return {"post_id": postId, "reported_by": reportedBy, "reason": reason};
+  }
+}
+
+class ReportAccount {
+  final int accountId;
+  final int reportedBy;
+  final String reason;
+
+  ReportAccount(
+      {required this.accountId,
+      required this.reportedBy,
+      required this.reason});
+
+  Map<String, dynamic> toJson() {
+    return {
+      "account_id": accountId,
+      "reported_by": reportedBy,
+      "reason": reason
+    };
+  }
+}
+
+class ReportResponse {
+  final bool? success;
+
+  ReportResponse({this.success});
+
+  factory ReportResponse.fromJson(Map<String, dynamic> json) {
+    return ReportResponse(success: json['success'] ?? false);
+  }
+}
+
+class SearchAccountRequest {
+  final int requestAccountId;
+  final String queryString;
+  final int page;
+  final int pageSize;
+
+  SearchAccountRequest(
+      {required this.requestAccountId,
+      required this.queryString,
+      required this.page,
+      required this.pageSize});
+
+  Map<String, dynamic> toJson() {
+    return {
+      "request_account_id": requestAccountId,
+      "query_string": queryString,
+      "page": page,
+      "page_size": pageSize
+    };
+  }
+}
+
+class SearchAccountResponse {
+  final List<SingleAccountInfo>? accounts;
+  final int page;
+  final int pageSize;
+
+  SearchAccountResponse(
+      {required this.accounts, required this.page, required this.pageSize});
+
+  factory SearchAccountResponse.fromJson(Map<String, dynamic> json) {
+    return SearchAccountResponse(
+      page: json['page'],
+      pageSize: json['page_size'],
+      accounts: json['accounts'] != null
+          ? (json['accounts'] as List)
+              .map((account) => SingleAccountInfo.fromJson(account))
+              .toList()
+          : [],
+    );
   }
 }

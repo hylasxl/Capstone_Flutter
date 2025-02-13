@@ -19,6 +19,7 @@ import 'package:syncio_capstone/screens/otp/forgot_password_otp_input_screen.dar
 import 'package:syncio_capstone/screens/profile/edit_data_screen.dart';
 import 'package:syncio_capstone/screens/profile/edit_detail_screen.dart';
 import 'package:syncio_capstone/screens/profile/profile_screen.dart';
+import 'package:syncio_capstone/screens/search/search_screen.dart';
 
 class AppRoute {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -108,6 +109,8 @@ class AppRoute {
                   chatId: args['chatId'],
                   partnerId: args['partnerId'],
                 ));
+      case "searchScreen":
+        return CupertinoPageRoute(builder: (context) => SearchScreen());
       default:
         return CupertinoPageRoute(builder: (context) => LoginScreen());
     }

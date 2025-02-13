@@ -125,4 +125,17 @@ class UserService {
       throw Exception(e);
     }
   }
+
+  Future<SearchAccountResponse> searchAccount(
+      SearchAccountRequest request) async {
+    try {
+      final response = await _dio.get(
+        ApiEndpoints.searchAccount,
+        data: request.toJson(),
+      );
+      return SearchAccountResponse.fromJson(response.data);
+    } catch (e) {
+      throw Exception(e);
+    }
+  }
 }
