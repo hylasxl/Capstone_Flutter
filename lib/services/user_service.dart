@@ -40,7 +40,7 @@ class UserService {
   Future<GetAccountInfoResponse> getAccountInfo(
       GetAccountInfoRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.getAccountInfo,
         data: request.toJson(),
       );
@@ -53,7 +53,7 @@ class UserService {
   Future<GetProfileInfoResponse> getProfileInfo(
       GetProfileInfoRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.getProfileInfo,
         data: request.toJson(),
       );
@@ -129,7 +129,7 @@ class UserService {
   Future<SearchAccountResponse> searchAccount(
       SearchAccountRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.searchAccount,
         data: request.toJson(),
       );

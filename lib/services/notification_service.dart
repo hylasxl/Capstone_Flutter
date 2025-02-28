@@ -21,7 +21,7 @@ class NotificationService {
   Future<GetNotificationResponse> getNotifications(
       GetNotificationRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.getNotifications,
         data: request.toJson(),
       );
@@ -47,7 +47,7 @@ class NotificationService {
   Future<CountUnreadNotiResponse> countUnread(
       CountUnreadNotiRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.countUnread,
         data: request.toJson(),
       );

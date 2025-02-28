@@ -2663,27 +2663,30 @@ class ChatMessage {
   final String content;
   final int timestamp;
 
-  ChatMessage(
-      {required this.senderID,
-      required this.receiverID,
-      required this.content,
-      required this.timestamp});
+  ChatMessage({
+    required this.senderID,
+    required this.receiverID,
+    required this.content,
+    required this.timestamp,
+  });
+
+  factory ChatMessage.fromJson(Map<String, dynamic> json) {
+    return ChatMessage(
+      senderID: json['sender_id'] as int? ?? 0, // Ensure int, fallback to 0
+      receiverID: json['receiver_id'] as int? ?? 0, // Ensure int, fallback to 0
+      content: json['content'] as String? ??
+          '', // Ensure String, fallback to empty string
+      timestamp: json['timestamp'] as int? ?? 0, // Ensure int, fallback to 0
+    );
+  }
 
   Map<String, dynamic> toJson() {
     return {
       "sender_id": senderID,
       "receiver_id": receiverID,
       "content": content,
-      "timestamp": timestamp
+      "timestamp": timestamp,
     };
-  }
-
-  factory ChatMessage.fromJson(Map<String, dynamic> json) {
-    return ChatMessage(
-        senderID: json['sender_id'],
-        receiverID: json['receiver_id'],
-        content: json['content'],
-        timestamp: json['timestamp']);
   }
 }
 
@@ -2711,33 +2714,34 @@ class ChatList {
   final int page;
   final int pageSize;
   final String chatId;
+  final List<int> participants;
 
-  ChatList({
-    required this.accountID,
-    required this.targetAccountID,
-    required this.displayName,
-    required this.avatarURL,
-    required this.lastMessageTimestamp,
-    required this.lastMessageContent,
-    required this.unreadMessageQuantity,
-    required this.page,
-    required this.pageSize,
-    required this.chatId,
-  });
+  ChatList(
+      {required this.accountID,
+      required this.targetAccountID,
+      required this.displayName,
+      required this.avatarURL,
+      required this.lastMessageTimestamp,
+      required this.lastMessageContent,
+      required this.unreadMessageQuantity,
+      required this.page,
+      required this.pageSize,
+      required this.chatId,
+      required this.participants});
 
   factory ChatList.fromJson(Map<String, dynamic> json) {
     return ChatList(
-      accountID: json['account_id'],
-      targetAccountID: json['target_account_id'],
-      displayName: json['display_name'],
-      avatarURL: json['avatar_url'],
-      lastMessageTimestamp: json['last_message_timestamp'],
-      lastMessageContent: json['last_message_content'],
-      unreadMessageQuantity: json['unread_message_quantity'],
-      page: json['page'],
-      pageSize: json['page_size'],
-      chatId: json['chat_id'],
-    );
+        accountID: json['account_id'],
+        targetAccountID: json['target_account_id'],
+        displayName: json['display_name'],
+        avatarURL: json['avatar_url'],
+        lastMessageTimestamp: json['last_message_timestamp'],
+        lastMessageContent: json['last_message_content'],
+        unreadMessageQuantity: json['unread_message_quantity'],
+        page: json['page'],
+        pageSize: json['page_size'],
+        chatId: json['chat_id'],
+        participants: List<int>.from(json['participants'] ?? []));
   }
 
   static List<ChatList> fromJsonList(List<dynamic> jsonList) {
@@ -2972,6 +2976,81 @@ class SearchAccountResponse {
     return SearchAccountResponse(
       page: json['page'],
       pageSize: json['page_size'],
+      accounts: json['accounts'] != null
+          ? (json['accounts'] as List)
+              .map((account) => SingleAccountInfo.fromJson(account))
+              .toList()
+          : [],
+    );
+  }
+}
+
+class CreateNewChatRequest {
+  final int firstAccountID;
+  final int secondAccountID;
+
+  CreateNewChatRequest(
+      {required this.firstAccountID, required this.secondAccountID});
+
+  Map<String, dynamic> toJson() {
+    return {
+      "first_account_id": firstAccountID,
+      "second_account_id": secondAccountID
+    };
+  }
+}
+
+class CreateNewChatResponse {
+  final bool success;
+  final String chatID;
+
+  CreateNewChatResponse({required this.success, required this.chatID});
+
+  factory CreateNewChatResponse.fromJson(Map<String, dynamic> json) {
+    return CreateNewChatResponse(
+        success: json['success'] ?? false, chatID: json["chat_id"]);
+  }
+}
+
+class DeleteChatRequest {
+  final String chatID;
+
+  DeleteChatRequest({required this.chatID});
+
+  Map<String, dynamic> toJson() {
+    return {"chat_id": chatID};
+  }
+}
+
+class DeleteChatResponse {
+  final bool success;
+
+  DeleteChatResponse({required this.success});
+
+  factory DeleteChatResponse.fromJson(Map<String, dynamic> json) {
+    return DeleteChatResponse(success: json['success'] ?? false);
+  }
+}
+
+class GetBlockListInfoRequest {
+  final int accountId;
+
+  GetBlockListInfoRequest({required this.accountId});
+
+  Map<String, dynamic> toJson() {
+    return {"account_id": accountId};
+  }
+}
+
+class GetBlockListInfoResponse {
+  final List<SingleAccountInfo> accounts;
+  bool success;
+
+  GetBlockListInfoResponse({required this.accounts, required this.success});
+
+  factory GetBlockListInfoResponse.fromJson(Map<String, dynamic> json) {
+    return GetBlockListInfoResponse(
+      success: json['success'],
       accounts: json['accounts'] != null
           ? (json['accounts'] as List)
               .map((account) => SingleAccountInfo.fromJson(account))

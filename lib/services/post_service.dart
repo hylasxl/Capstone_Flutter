@@ -21,7 +21,7 @@ class PostService {
   Future<GetWallPostListResponse> getWallPostList(
       GetWallPostListRequest request) async {
     try {
-      final response = await _dio.get(ApiEndpoints.getWallList, data: request);
+      final response = await _dio.post(ApiEndpoints.getWallList, data: request);
       return GetWallPostListResponse.fromJson(response.data);
     } catch (e) {
       throw Exception(e);
@@ -32,7 +32,7 @@ class PostService {
       GetPostCommentRequest request) async {
     try {
       final response =
-          await _dio.get(ApiEndpoints.getPostComment, data: request);
+          await _dio.post(ApiEndpoints.getPostComment, data: request);
       return GetPostCommentsResponse.fromJson(response.data);
     } catch (e) {
       throw Exception(e);
@@ -90,7 +90,7 @@ class PostService {
   Future<GetNewsFeedResponse> getNewsFeed(GetNewsFeedRequest request) async {
     try {
       final response =
-          await _dio.get(ApiEndpoints.getNewsFeed, data: request.toJson());
+          await _dio.post(ApiEndpoints.getNewsFeed, data: request.toJson());
       return GetNewsFeedResponse.fromJson(response.data);
     } catch (e) {
       throw Exception(e);

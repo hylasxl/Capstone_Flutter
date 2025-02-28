@@ -9,7 +9,7 @@ class FriendService {
   Future<GetPendingListResponse> getPendingList(
       GetPendingListRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.getPendingList,
         data: request.toJson(),
       );
@@ -22,7 +22,7 @@ class FriendService {
   Future<CountFriendPendingResponse> countFriendPending(
       CountFriendPendingRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.countFriendPending,
         data: request.toJson(),
       );
@@ -49,7 +49,7 @@ class FriendService {
       GetDislayListFriend request) async {
     try {
       final response =
-          await _dio.get(ApiEndpoints.getListFriend, data: request.toJson());
+          await _dio.post(ApiEndpoints.getListFriend, data: request.toJson());
       return DisplayListFriendResponse.fromJson(response.data);
     } catch (e) {
       throw Exception(e);
@@ -84,7 +84,7 @@ class FriendService {
   Future<CheckExistingFriendRequestResponse> checkExistingFriendRequest(
       CheckExistingFriendRequestRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.checkExistingFriendRequest,
         data: request.toJson(),
       );
@@ -132,7 +132,7 @@ class FriendService {
   Future<CheckIsFollowResponse> checkIsFollow(
       CheckIsFollowRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.checkIsFollow,
         data: request.toJson(),
       );
@@ -144,11 +144,24 @@ class FriendService {
 
   Future<CheckIsBlockResponse> checkIsBlock(CheckIsBlockRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.checkIsBlock,
         data: request.toJson(),
       );
       return CheckIsBlockResponse.fromJson(response.data);
+    } catch (e) {
+      throw Exception(e);
+    }
+  }
+
+  Future<GetBlockListInfoResponse> getBlockListInfo(
+      GetBlockListInfoRequest request) async {
+    try {
+      final response = await _dio.get(
+        ApiEndpoints.getListBlockInfo,
+        data: request.toJson(),
+      );
+      return GetBlockListInfoResponse.fromJson(response.data);
     } catch (e) {
       throw Exception(e);
     }

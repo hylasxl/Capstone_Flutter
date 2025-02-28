@@ -46,7 +46,6 @@ class _MessageDetailScreenState extends State<MessageDetailScreen> {
         if (currentAccountID == null) return;
         setState(() {
           if (message.senderID != widget.partnerId) return;
-
           _messages.insert(
               0,
               MessageData(

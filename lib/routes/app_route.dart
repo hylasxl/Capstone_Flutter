@@ -16,6 +16,7 @@ import 'package:syncio_capstone/screens/general/theme_screen.dart';
 import 'package:syncio_capstone/screens/home/tab.dart';
 import 'package:syncio_capstone/screens/message/message_detail_screen.dart';
 import 'package:syncio_capstone/screens/otp/forgot_password_otp_input_screen.dart';
+import 'package:syncio_capstone/screens/profile/blockList_screen.dart';
 import 'package:syncio_capstone/screens/profile/edit_data_screen.dart';
 import 'package:syncio_capstone/screens/profile/edit_detail_screen.dart';
 import 'package:syncio_capstone/screens/profile/profile_screen.dart';
@@ -111,6 +112,8 @@ class AppRoute {
                 ));
       case "searchScreen":
         return CupertinoPageRoute(builder: (context) => SearchScreen());
+      case "blockListScreen":
+        return CupertinoPageRoute(builder: (context) => BlockListScreen());
       default:
         return CupertinoPageRoute(builder: (context) => LoginScreen());
     }

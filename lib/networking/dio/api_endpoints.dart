@@ -45,6 +45,8 @@ class ApiEndpoints {
       "${ApiVersioning.version}/friends/check-is-follow";
   static String checkIsBlock =
       "${ApiVersioning.version}/friends/check-is-block";
+  static String getListBlockInfo =
+      "${ApiVersioning.version}/friends/get-block-list-info";
 
   static String createPost = "${ApiVersioning.version}/posts/create-new-post";
   static String getWallList = "${ApiVersioning.version}/posts/get-wall-posts";
@@ -75,6 +77,9 @@ class ApiEndpoints {
   static String checkValidOTP = "${ApiVersioning.version}/otps/check-valid-otp";
 
   static String getChatList = "${ApiVersioning.version}/messages/get-chat-list";
+  static String createChat =
+      "${ApiVersioning.version}/messages/create-new-chat";
+  static String deleteChat = "${ApiVersioning.version}/messages/delete-chat";
   static String getChatMessages =
       "${ApiVersioning.version}/messages/get-messages";
   static String actionMessage =

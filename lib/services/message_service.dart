@@ -8,7 +8,7 @@ class MessageService {
 
   Future<List<ChatList>?> getChatList(GetChatListRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.getChatList,
         data: request.toJson(),
       );
@@ -21,7 +21,7 @@ class MessageService {
   Future<GetMessageHistoryResponse> getMessageHistory(
       GetMessageHistoryRequest request) async {
     try {
-      final response = await _dio.get(
+      final response = await _dio.post(
         ApiEndpoints.getChatMessages,
         data: request.toJson(),
       );
@@ -52,6 +52,31 @@ class MessageService {
         data: request.toJson(),
       );
       return ReceiverMarkMessageAsReadResponse.fromJson(response.data);
+    } catch (e) {
+      throw Exception(e);
+    }
+  }
+
+  Future<CreateNewChatResponse> createNewChat(
+      CreateNewChatRequest request) async {
+    try {
+      final response = await _dio.post(
+        ApiEndpoints.createChat,
+        data: request.toJson(),
+      );
+      return CreateNewChatResponse.fromJson(response.data);
+    } catch (e) {
+      throw Exception(e);
+    }
+  }
+
+  Future<DeleteChatResponse> deleteChat(DeleteChatRequest request) async {
+    try {
+      final response = await _dio.delete(
+        ApiEndpoints.deleteChat,
+        data: request.toJson(),
+      );
+      return DeleteChatResponse.fromJson(response.data);
     } catch (e) {
       throw Exception(e);
     }

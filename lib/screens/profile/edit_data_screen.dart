@@ -384,6 +384,13 @@ class _EditDataScreenState extends State<EditDataScreen> {
                           'privacyStatus': widget.privacy.materialStatus,
                         });
                   },
+                ),
+                ListTile(
+                  title: Text("View Block List"),
+                  trailing: Icon(Icons.block),
+                  onTap: () {
+                    Navigator.of(context).pushNamed("blockListScreen");
+                  },
                 )
               ],
             )
